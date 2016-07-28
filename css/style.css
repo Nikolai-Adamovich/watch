@@ -1,0 +1,70 @@
+.watch {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background: #f0f0f0;
+	border-radius: 50%;
+}
+.watch ul {
+	list-style: none;
+}
+.ticks > li {
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	left: 50%;
+	border-top: 4px solid #000000;
+	border-bottom: 4px solid #000000;
+	transform-origin: 50% 50%;
+	box-sizing: border-box;
+}
+.ticks > li:nth-child(5n) {
+	width: 4px;
+	border-width: 8px;
+	margin-left: -2px;
+}
+.numbers > li {
+	position: absolute;
+	width: 2em;
+	height: 1em;
+	margin-left: -1em;
+	margin-top: -0.5em;
+	font: bold 12px Helvetica, sans-serif;
+	text-align: center;
+	line-height: 1;
+}
+.hands > li {
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	background: #000000;
+	transform-origin: bottom center;/*50% 100%*/
+}
+.hands > li.hour {
+	width: 6px;
+	height: 25%;
+	margin-left: -3px;
+}
+.hands > li.minute {
+	width: 4px;
+	height: 35%;
+	margin-left: -2px;
+}
+.hands > li.second {
+	width: 2px;
+	height: 45%;
+	margin-left: -1px;
+	background: #ff0000;
+}
+
+.dot {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 12px;
+	height: 12px;
+	margin-top: -6px;
+	margin-left: -6px;
+	border-radius: 50%;
+	background: #000000;
+}
